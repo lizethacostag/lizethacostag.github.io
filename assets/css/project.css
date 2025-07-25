@@ -514,13 +514,13 @@ ul {
 
 @media only screen and (max-width: 767px) {
   .project-box {
-    margin-top: 18rem;
+    margin-top: 3rem;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .project-box {
-    margin-top: 18rem;
+    margin-top: 2rem;
   }
 }
 
@@ -529,7 +529,7 @@ ul {
     transform: translateY(calc(90px + 4em));
   }
   .social-icon svg {
-    margin-top: 20px;
+    margin-top: 4px;
   }
 }
 
