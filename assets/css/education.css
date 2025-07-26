@@ -210,28 +210,49 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 background-color: var(--bg1-color);
 padding: 1px;
 }
+
+/* Contenedor de las cards para móviles */
 @media (max-width: 768px) {
+#mooc {
+    padding: 0 10px;
+}
 #mooc .card {
-width: 200px;
-height: 220px;
+    width: calc(50% - 10px);
+    height: 200px;
+    margin: 5px;
  }
 }
+
 @media (max-width: 480px) {
+#mooc {
+    padding: 0 5px;
+}
 #mooc .card {
-width: 180px;
-height: 180px;
+    width: calc(50% - 8px);
+    height: 180px;
+    margin: 4px;
  }
 }
+
+@media (max-width: 390px) {
+#mooc {
+    padding: 0 5px;
+}
+#mooc .card {
+    width: calc(50% - 6px);
+    height: 160px;
+    margin: 3px;
+ }
+}
+
 @media (max-width: 360px) {
-#mooc .card {
-width: 160px;
-height: 160px;
- }
+#mooc {
+    padding: 0 3px;
 }
-@media (max-width: 320px) {
 #mooc .card {
-width: 140px;
-height: 140px;
+    width: calc(50% - 4px);
+    height: 150px;
+    margin: 2px;
  }
 }
 /* SVG animation */
