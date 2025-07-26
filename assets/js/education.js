@@ -95,7 +95,7 @@ let output = "";
 moocscards.forEach(
  ({ title, cardImage, moocLink, class: customClass }) =>
  (output += `
- <div class="col-6 col-md-3 col-sm-4 column" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600" >
+ <div class="col-6 col-sm-6 col-md-4 col-lg-3 column" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="600" >
  <div class="card mb-3 mx-auto">
  <div class="content">
  <div class="content-overlay"></div>
