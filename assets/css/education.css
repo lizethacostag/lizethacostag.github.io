@@ -200,7 +200,7 @@ transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
 cursor: pointer;
 display: flex;
-flex-wrap: wrap;
+flex-direction: column;
 }
 #mooc .card:hover {
 transform: scale(1.05);
@@ -208,58 +208,57 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 #mooc .card-body {
 background-color: var(--bg1-color);
-padding: 1px;
+padding: 8px;
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
-/* Mejorar espaciado en móviles */
-@media (max-width: 768px) {
-#mooc {
-    padding: 0 8px;
+#mooc .content {
+flex: 1;
+position: relative;
 }
-#mooc .row {
-    margin: 0 -4px;
+
+#mooc .card-body h6 {
+margin: 0;
+font-size: 12px;
+line-height: 1.3;
+text-align: center;
 }
-#mooc .column {
-    padding: 0 4px;
-    margin-bottom: 8px;
-}
+
+/* Una sola columna en móviles */
+@media (max-width: 576px) {
 #mooc .card {
-    width: 100%;
-    max-width: none;
-    height: 240px;
+    width: 280px;
+    height: 260px;
+    max-width: 90%;
  }
+#mooc .card-body h6 {
+    font-size: 13px;
+    line-height: 1.4;
+    padding: 10px 8px;
+}
 }
 
 @media (max-width: 480px) {
-#mooc {
-    padding: 0 6px;
-}
-#mooc .row {
-    margin: 0 -3px;
-}
-#mooc .column {
-    padding: 0 3px;
-    margin-bottom: 6px;
-}
 #mooc .card {
-    height: 220px;
+    width: 260px;
+    height: 240px;
  }
 }
 
 @media (max-width: 390px) {
 #mooc .card {
-    height: 200px;
- }
-#mooc .card-body h6 {
-    font-size: 11px !important;
-    line-height: 1.2;
-    padding: 8px 2px !important;
+    width: 240px;
+    height: 220px;
  }
 }
 
 @media (max-width: 360px) {
 #mooc .card {
-    height: 190px;
+    width: 220px;
+    height: 200px;
  }
 }
 /* SVG animation */
